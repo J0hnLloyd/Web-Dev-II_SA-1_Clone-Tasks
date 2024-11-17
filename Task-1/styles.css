@@ -1,0 +1,550 @@
+/* Set the background color for the entire body */
+body {
+    background-color: #D3D3D3; /* Light gray background color for the page */
+}
+
+/* Style all paragraph elements inside the body */
+body p {
+    font-family: "Josefin Sans", sans-serif; /* Use the 'Josefin Sans' font for paragraphs */
+}
+
+/* Style all h1 headings */
+h1 {
+    font-family: "Protest Guerrilla", sans-serif; /* Use the 'Protest Guerrilla' font for h1 headings */
+}
+
+/* Style all h2 headings */
+h2 {
+    font-family: "Protest Guerrilla", sans-serif; /* Use the 'Protest Guerrilla' font for h2 headings */
+}
+
+@media (min-width: 1025px) { /* ...Desktop... */
+
+    /* Styles for the main container */
+main {
+    margin: 0 auto; /* Center align the main container */
+    background-color: #e9e9e9; /* Light gray background */
+    border: solid 1px black; /* Border with black color */
+    border-bottom: 0; /* Remove the bottom border */
+    max-width: 1024px; /* Restrict the maximum width */
+}
+
+/* Styling for the logo */
+.logo {
+    display: block; /* Center the logo */
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    padding: 0; /* Remove default padding */
+    padding-top: 50px; /* Add space above the logo */
+}
+
+/* Navigation list styling */
+.nav-list {
+    display: flex; /* Align navigation items in a row */
+    justify-content: center; /* Center the navigation list */
+    padding: 50px 0; /* Add vertical spacing */
+    gap: 225px; /* Space between navigation items */
+}
+
+/* Title and title container styles */
+.title-container {
+    padding: 0 50px; /* Add horizontal padding */
+}
+
+.title {
+    font-size: 96px; /* Large font size for the title */
+    margin: 0; /* Remove default margin */
+    padding: 50px 50px 0 0; /* Add spacing around the title */
+}
+
+.title-container p {
+    font-size: 20px; /* Set font size for paragraphs */
+    margin-bottom: 50px; /* Add space below the text */
+}
+
+.sub-title {
+    margin: 0; /* Remove default margin */
+}
+
+/* Layout for grouped elements */
+.grouped-main {
+    column-count: 3; /* Create a 3-column layout */
+    gap: 50px; /* Space between columns */
+    margin-bottom: 50px; /* Add space below */
+    padding: 0 50px; /* Add horizontal padding */
+}
+
+/* Album container grid layout */
+.album-container {
+    display: grid; /* Use grid for layout */
+    padding: 0; /* Remove padding */
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: auto auto; /* Two columns */
+}
+
+.album-container img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop and center the image */
+}
+
+.img-1 {
+    grid-row: 1 / 1; /* Position image in the first row */
+    grid-column: 1 / 1; /* Position image in the first column */
+}
+
+/* Subcontainer grid layout */
+.album-subcontainer {
+    display: grid; /* Use grid for layout */
+    padding: 0; /* Remove padding */
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: auto auto; /* Two columns */
+}
+
+/* Author section styling */
+.author {
+    display: flex; /* Align author image and text in a row */
+    margin: 50px 50px 0 50px; /* Add spacing */
+}
+
+.author-img {
+    width: 200px; /* Set width for the author image */
+    height: 200px; /* Set height for the author image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Crop and center the image */
+    position: relative; /* Use relative positioning */
+    margin: 0; /* Remove margin */
+}
+
+.author p {
+    text-align: justify; /* Justify the paragraph text */
+    padding-right: 50px; /* Add space to the right */
+    margin: 0; /* Remove default margin */
+}
+
+.author h2 {
+    text-align: center; /* Center-align the heading */
+}
+
+/* Footer styling */
+footer {
+    margin: 0 auto; /* Center the footer */
+    background-color: #14181d; /* Dark background color */
+    max-width: 1024px; /* Restrict the maximum width */
+    padding: 25px 0; /* Add vertical padding */
+    border: solid 0 1px; /* Subtle border effect */
+}
+
+footer p {
+    text-align: center; /* Center-align the text */
+    color: white; /* White text color for contrast */
+}
+
+}
+
+@media (min-width: 721px) and (max-width: 1025px) { /* ...Tablets... */
+    
+    /* Main container styles */
+main {
+    margin: auto; /* Center align the main content */
+    max-width: 570px; /* Restrict width for smaller devices */
+    background-color: #e9e9e9; /* Light gray background */
+    border: solid 1px black; /* Add a solid black border */
+    border-bottom: 0; /* Remove the bottom border */
+}
+
+/* Logo styles */
+.logo {
+    display: block; /* Center the logo horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px; /* Smaller width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    padding: 0; /* Remove default padding */
+    padding-top: 30px; /* Add spacing above the logo */
+}
+
+/* Navigation styles */
+.nav-list {
+    display: flex; /* Arrange navigation items in a row */
+    justify-content: center; /* Center the navigation items */
+    padding: 30px 0; /* Add vertical padding */
+    gap: 100px; /* Space between navigation items */
+}
+
+/* Title and title container styles */
+.title-container {
+    margin: 0 30px; /* Add horizontal spacing */
+}
+
+.title {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center-align the title */
+    margin-top: 30px; /* Add space above the title */
+}
+
+.sub-title {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center-align the subtitle */
+    margin-bottom: 30px; /* Add space below the subtitle */
+}
+
+.title-container p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+/* Grouped main content styles */
+.grouped-main {
+    column-count: 1; /* Single-column layout */
+    gap: 30px; /* Space between items */
+    margin: 0 30px 30px 30px; /* Add spacing around the section */
+}
+
+.grouped-main h1 {
+    text-align: center; /* Center-align headings */
+    margin: 30px 0; /* Add spacing above and below */
+}
+
+/* Sub-container paragraph styles */
+.sub-container p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Album grid layout */
+.album-container {
+    display: grid; /* Use grid layout */
+    padding: 0; /* Remove padding */
+    grid-template-rows: auto auto auto auto; /* Four rows */
+    grid-template-columns: auto auto auto auto; /* Four columns */
+}
+
+.album-container img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop and center images */
+}
+
+.img-1 {
+    display: none; /* Hide the first image */
+}
+
+/* Album sub-container layout */
+.album-subcontainer {
+    display: grid; /* Use grid layout */
+    padding: 0; /* Remove padding */
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: auto auto; /* Two columns */
+}
+
+/* Author section styles */
+.author {
+    display: flex; /* Arrange author image and text in a row */
+    margin: 30px 30px 0 30px; /* Add spacing around the section */
+}
+
+.author-img {
+    width: 200px; /* Fixed width for author image */
+    height: 200px; /* Fixed height for author image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Crop and center the image */
+    position: relative; /* Positioning context */
+    margin: 0; /* Remove default margin */
+}
+
+.author p {
+    text-align: justify; /* Justify the text */
+    padding-right: 30px; /* Add spacing to the right */
+}
+
+.author h2 {
+    text-align: center; /* Center-align the heading */
+}
+
+/* Footer styles */
+footer {
+    margin: auto; /* Center the footer */
+    background-color: #14181d; /* Dark background */
+    max-width: 570px; /* Restrict width to match main container */
+    padding: 15px 0; /* Add vertical padding */
+    border: solid 0 1px; /* Subtle border effect */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center-align the text */
+}
+
+}
+
+@media (min-width: 541px) and (max-width: 720px) { /* ...Large Mobile... */
+
+    /* General body styles */
+body {
+    margin: 0; /* Remove default browser margins */
+}
+
+/* Header styles */
+header {
+    background-color: #D3D3D3; /* Light gray background */
+    border-bottom: 1px black; /* Add a border at the bottom */
+}
+
+/* Main content area styles */
+main {
+    background-color: #e9e9e9; /* Light gray background */
+    flex: 1; /* Allow main to grow or shrink as needed */
+    overflow: scroll; /* Enable scrolling for overflowing content */
+    border-top: solid black 1px; /* Add a border at the top */
+}
+
+/* Logo styles */
+.logo {
+    display: block; /* Center the logo horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px; /* Restrict the logo width */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px 0; /* Add vertical padding */
+}
+
+/* Navigation styles */
+.nav-list {
+    display: flex; /* Arrange navigation items in a row */
+    justify-content: center; /* Center navigation items */
+    gap: 100px; /* Add space between items */
+}
+
+/* Title container styles */
+.title-container {
+    margin: 0 20px; /* Add horizontal spacing */
+}
+
+.title {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center-align the title */
+    margin: 20px 0 0 0; /* Add spacing above the title */
+}
+
+.sub-title {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center-align the subtitle */
+    margin-bottom: 20px; /* Add spacing below the subtitle */
+}
+
+.title-container p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+/* Grouped content styles */
+.grouped-main {
+    column-count: 1; /* Single-column layout */
+    gap: 20px; /* Space between items */
+    margin: 0 20px 20px 20px; /* Add spacing around the section */
+}
+
+.grouped-main h1 {
+    text-align: center; /* Center-align headings */
+    margin: 20px 0; /* Add spacing above and below */
+}
+
+/* Sub-container paragraph styles */
+.sub-container p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+/* Album grid styles */
+.album-container {
+    display: grid; /* Use grid layout */
+    padding: 0; /* Remove padding */
+    grid-template-rows: auto auto auto auto; /* Four rows */
+    grid-template-columns: auto auto auto auto; /* Four columns */
+}
+
+.album-container img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop and center images */
+}
+
+.img-1 {
+    display: none; /* Hide the first image */
+}
+
+/* Author section styles */
+.author {
+    display: flex; /* Arrange author image and text */
+    flex-direction: column-reverse; /* Reverse order of elements */
+    align-items: center; /* Center align elements */
+    margin: 20px 20px 0 20px; /* Add spacing around the section */
+}
+
+.author-img {
+    width: 200px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Crop and center the image */
+    display: block; /* Center the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author p {
+    text-align: center; /* Center-align the text */
+}
+
+.author h2 {
+    text-align: center; /* Center-align the heading */
+    margin: 20px 0; /* Add spacing above and below */
+}
+
+/* Footer styles */
+footer {
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around content */
+    background-color: #14181d; /* Dark background */
+}
+
+footer p {
+    margin: 0; /* Remove default paragraph margin */
+    text-align: center; /* Center-align text */
+    color: white; /* Use white text for contrast */
+}
+
+}
+
+@media (max-width: 540px) { /* ...Small Mobile... */
+
+/* General body styles */
+body {
+    margin: 0; /* Remove default browser margins */
+}
+
+/* Header styles */
+header {
+    background-color: #D3D3D3; /* Light gray background for the header */
+    border-bottom: 1px black; /* Add a bottom border to the header */
+}
+
+/* Main content area styles */
+main {
+    background-color: #e9e9e9; /* Light gray background for the main area */
+    flex: 1; /* Allow the main content to flexibly fill space */
+    overflow: scroll; /* Enable scrolling for overflowing content */
+    border-top: solid black 1px; /* Add a top border */
+}
+
+/* Logo styles */
+.logo {
+    display: block; /* Center the logo horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    padding: 12px 0; /* Add vertical padding */
+}
+
+/* Navigation styles */
+.nav-list {
+    display: flex; /* Arrange navigation items in a row */
+    justify-content: center; /* Center-align navigation items */
+    gap: 40px; /* Add spacing between items */
+}
+
+/* Title container styles */
+.title-container {
+    margin: 0 12px 12px 12px; /* Add spacing around the container */
+}
+
+.title {
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center-align the title */
+    margin-top: 12px; /* Add space above the title */
+}
+
+.sub-title {
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center-align the subtitle */
+    margin-bottom: 12px; /* Add space below the subtitle */
+}
+
+.title-container p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+/* Grouped content styles */
+.grouped-main {
+    column-count: 1; /* Use a single-column layout */
+    gap: 12px; /* Add spacing between items */
+    margin: 0 12px 12px 12px; /* Add spacing around the group */
+}
+
+.grouped-main h1 {
+    text-align: center; /* Center-align the headings */
+    margin: 12px 0; /* Add vertical spacing */
+}
+
+/* Sub-container paragraph styles */
+.sub-container p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+/* Album grid styles */
+.album-container {
+    display: grid; /* Use a grid layout for albums */
+    padding: 0; /* Remove default padding */
+    grid-template-rows: auto auto auto auto; /* Four rows */
+    grid-template-columns: auto auto auto auto; /* Four columns */
+}
+
+.album-container img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop and center images */
+}
+
+.img-1 {
+    display: none; /* Hide the first image */
+}
+
+/* Author section styles */
+.author {
+    display: flex; /* Arrange elements in a flexbox layout */
+    flex-direction: column-reverse; /* Reverse the order of child elements */
+    align-items: center; /* Center-align content */
+    margin: 12px 0 0 0; /* Add spacing at the top */
+}
+
+.author-img {
+    width: 200px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Crop and center the image */
+    display: block; /* Block-level image for centering */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author p {
+    text-align: center; /* Center-align the text */
+    margin: 0; /* Remove default margins */
+    margin-bottom: 12px; /* Add space below the paragraph */
+}
+
+.author h2 {
+    text-align: center; /* Center-align the heading */
+    margin: 12px 0; /* Add spacing above and below */
+}
+
+/* Footer styles */
+footer {
+    margin: 0; /* Remove default margins */
+    padding: 12px; /* Add padding around footer content */
+    background-color: #14181d; /* Dark background color for the footer */
+}
+
+footer p {
+    margin: 0; /* Remove default paragraph margins */
+    text-align: center; /* Center-align the text */
+    color: white; /* White text for contrast */
+}
+
+}
