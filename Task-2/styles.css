@@ -1,0 +1,432 @@
+/* Reset all margins and padding for all elements to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background color of the body to white */
+body {
+    background-color: #ffffff;
+}
+
+/* Style for the <h1> element inside the <header> */
+header h1 {
+    font-family: 'Teko', sans-serif; /* Use 'Teko' font for the header title */
+}
+
+/* Style for elements with the 'search-button' class */
+.search-button {
+    font-family: 'Teko', sans-serif; /* Use 'Teko' font for the search button */
+    font-size: 2em; /* Set the font size to 2em (twice the base font size) */
+}
+
+/* Style for elements with the 'movie-button' class */
+.movie-button {
+    font-family: 'Teko', sans-serif; /* Use 'Teko' font for the movie button */
+    font-size: 2em; /* Set the font size to 2em (twice the base font size) */
+}
+
+@media (min-width: 1025px) { /* ...Desktop... */
+    
+    /* Header styling */
+header {
+    width: 100%; /* Ensure header spans full width of the screen */
+    border-bottom: 12px solid #666; /* Add a bottom border with a gray color */
+}
+
+/* Styling for the header <h1> */
+header h1 {
+    font-size: 3em; /* Set the font size of the header title to 3em */
+}
+
+/* Navigation container styling */
+.nav-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items to opposite ends */
+    align-items: center; /* Vertically align items in the center */
+    margin: 16px; /* Add some space around the container */
+}
+
+/* Styling for the <ul> inside the nav container */
+.nav-container ul {
+    font-family: 'Leto', sans-serif; /* Use 'Leto' font for the navigation items */
+    list-style: none; /* Remove default list styling (bullets) */
+    display: flex; /* Make list items display horizontally */
+    gap: 48px; /* Space out list items by 48px */
+    justify-content: center; /* Center the list horizontally */
+}
+
+/* Styling for the search button */
+.search-button {
+    padding: 5px 15px; /* Add padding inside the button */
+    border: 2px solid #333; /* Add a dark border around the button */
+    border-radius: 8px; /* Round the corners of the button */
+    background-color: #bcbcbc; /* Set a light gray background color */
+}
+
+/* Main content area styling */
+main {
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 900px; /* Limit the width of the main content */
+}
+
+/* Styling for the first movie poster container */
+.mv-poster-1 {
+    background-color: #ffffff; /* White background for the poster container */
+    margin: 0; /* Reset margin */
+    align-items: center; /* Center align the items inside */
+    border: solid 1px black; /* Add a black border around the container */
+    margin: 48px 0; /* Add vertical margin to create space between elements */
+}
+
+/* Styling for images inside .mv-poster-1 */
+.mv-poster-1 img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-bottom: black 1px solid; /* Add a black border at the bottom of the image */
+}
+
+/* Styling for movie elements inside .mv-elements */
+.mv-elements {
+    display: grid; /* Use CSS grid layout */
+    grid-template-rows: auto auto; /* Two rows, height adjusted automatically */
+    grid-template-columns: auto auto; /* Two columns, width adjusted automatically */
+}
+
+/* Styling for paragraphs inside .mv-elements */
+.mv-elements p {
+    font-size: 1.5em; /* Set the font size */
+    margin: 16px 0 16px 16px; /* Add margin for spacing */
+    font-family: 'Leto', sans-serif; /* Use 'Leto' font for the text */
+    text-align: justify; /* Justify the text */
+}
+
+/* Styling for the movie button inside .mv-poster-1 */
+.mv-poster-1 .movie-button {
+    background-color: #a4a4a4; /* Set a light gray background color */
+    border: solid 1px black; /* Add a black border around the button */
+    border-radius: 8px; /* Round the corners */
+    font-size: 2em; /* Increase the font size */
+    text-align: center; /* Center the text inside the button */
+    padding: 16px 5%; /* Add padding inside the button */
+    margin: 16px; /* Add margin around the button */
+}
+
+/* Styling for the second poster container */
+.mv-poster-cont-2 {
+    display: grid; /* Use grid layout for poster container */
+    gap: 0 48px; /* Add horizontal gap of 48px between items */
+    grid-template-rows: auto auto; /* Two rows, height adjusted automatically */
+    grid-template-columns: auto auto; /* Two columns, width adjusted automatically */
+}
+
+/* General styling for mv-poster-2 and mv-poster-3 containers */
+.mv-poster-2, .mv-poster-3 {
+    background-color: #fff; /* White background for both poster containers */
+    border: 1px solid #000000; /* Black border around the containers */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Image styling for mv-poster-2 and mv-poster-3 */
+.mv-poster-2 img, .mv-poster-3 img {
+    height: auto; /* Maintain the aspect ratio */
+    border-bottom: black 1px solid; /* Add a black border at the bottom */
+    max-width: 426px; /* Limit the width of the images */
+}
+
+/* Paragraph styling for mv-poster-2 and mv-poster-3 */
+.mv-poster-2 p, .mv-poster-3 p {
+    font-size: 1.5em; /* Set the font size */
+    margin: 16px; /* Add space around the paragraphs */
+    font-family: 'Leto', sans-serif; /* Use 'Leto' font */
+    text-align: justify; /* Justify the text */
+    height: 300px; /* Limit the height of the paragraph */
+}
+
+/* Styling for movie button inside mv-poster-2 and mv-poster-3 */
+.mv-poster-2 .movie-button, .mv-poster-3 .movie-button {
+    background-color: #a4a4a4; /* Light gray background */
+    border: solid 1px black; /* Black border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 2em; /* Larger font size */
+    text-align: center; /* Center the text */
+    padding: 16px 5%; /* Add padding */
+    margin: 16px; /* Add margin */
+}
+
+/* Styling for movie posters 4, 5, and 6 containers */
+.mv-poster-4, .mv-poster-5, .mv-poster-6 {
+    background-color: #fff; /* White background */
+    border: 1px solid #000000; /* Black border */
+    display: grid; /* Use grid layout */
+    grid-template-rows: auto auto; /* Two rows with automatic height */
+    grid-template-columns: auto auto; /* Two columns with automatic width */
+    margin-top: 48px; /* Add margin at the top */
+}
+
+/* Image styling for mv-poster-4, mv-poster-5, and mv-poster-6 */
+.mv-poster-4 img, .mv-poster-5 img, .mv-poster-6 img {
+    width: 100%; /* Make the image fill the width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    border: black 1px solid; /* Black border around the image */
+}
+
+/* Paragraph styling for mv-poster-4, mv-poster-5, and mv-poster-6 */
+.mv-poster-4 p, .mv-poster-5 p, .mv-poster-6 p {
+    font-size: 1.5em; /* Set font size */
+    margin: 16px; /* Add margin around the paragraph */
+    font-family: 'Leto', sans-serif; /* Use 'Leto' font */
+    text-align: justify; /* Justify the text */
+    height: 290px; /* Set a fixed height for the paragraph */
+    width: 450px; /* Set a fixed width */
+}
+
+/* Movie button styling for mv-poster-4, mv-poster-5, and mv-poster-6 */
+.mv-poster-4 .movie-button, .mv-poster-5 .movie-button, .mv-poster-6 .movie-button {
+    background-color: #a4a4a4; /* Light gray background */
+    border: solid 1px black; /* Black border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 2em; /* Larger font size */
+    text-align: center; /* Center the text */
+    padding: 16px 5%; /* Add padding */
+    margin: 16px; /* Add margin */
+}
+
+/* Extra bottom margin for mv-poster-6 */
+.mv-poster-6 {
+    margin-bottom: 48px; /* Add space below the last poster */
+}
+
+/* Positioning each poster container relative */
+.mv-poster-1, 
+.mv-poster-2, 
+.mv-poster-3, 
+.mv-poster-4, 
+.mv-poster-5, 
+.mv-poster-6 {
+    position: relative; /* Allows positioning of pseudo-elements */
+}
+
+/* Adding shadow effect to poster containers using ::before pseudo-element */
+.mv-poster-1::before, 
+.mv-poster-2::before, 
+.mv-poster-3::before, 
+.mv-poster-4::before, 
+.mv-poster-5::before, 
+.mv-poster-6::before {
+    content: ''; /* Empty content for the shadow effect */
+    position: absolute; /* Position it absolutely within the poster container */
+    top: 10px; /* Adjust for shadow offset */
+    left: 10px; /* Adjust for shadow offset */
+    right: -10px; /* Match shadow offset */
+    bottom: -10px; /* Match shadow offset */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black shadow */
+    z-index: -1; /* Ensure the shadow is behind the poster content */
+}
+
+
+}
+
+@media (min-width: 721px) and (max-width: 1024px) { /* ...Tablet... */
+    
+    /* Header styling */
+header {
+    width: 100%; /* Ensure header spans full width of the screen */
+    border-bottom: 12px solid #666; /* Add a bottom border with a gray color */
+}
+
+/* Styling for the <h1> element inside the <header> */
+header h1 {
+    font-size: 3em; /* Set the font size of the header title to 3em */
+}
+
+/* Navigation container styling */
+.nav-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items to opposite ends */
+    align-items: center; /* Vertically align items in the center */
+    margin: 16px; /* Add some space around the container */
+}
+
+/* Styling for the <ul> inside the navigation container */
+.nav-container ul {
+    font-family: 'Leto', sans-serif; /* Use 'Leto' font for the navigation items */
+    list-style: none; /* Remove default list styling (bullets) */
+    display: flex; /* Make list items display horizontally */
+    gap: 48px; /* Space out list items by 48px */
+    justify-content: center; /* Center the list horizontally */
+}
+
+/* Styling for the search button */
+.search-button {
+    padding: 5px 15px; /* Add padding inside the button */
+    border: 2px solid #333; /* Add a dark border around the button */
+    border-radius: 8px; /* Round the corners of the button */
+    background-color: #bcbcbc; /* Set a light gray background color */
+}
+
+/* Main content area styling */
+main {
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 600px; /* Limit the width of the main content */
+}
+
+/* Movie poster container grid layout */
+.mv-poster-cont {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 48px; /* Add horizontal and vertical gap between items */
+    margin: 48px 0; /* Add vertical margin to create space between elements */
+}
+
+/* Styling for each movie poster container (1-6) */
+.mv-poster-1, .mv-poster-2, .mv-poster-3, .mv-poster-4, .mv-poster-5, .mv-poster-6 {
+    background-color: #fff; /* White background for each movie poster */
+    border: 1px solid #000000; /* Black border around the container */
+}
+
+/* Styling for images inside the movie poster containers */
+.mv-poster-1 img, .mv-poster-2 img, .mv-poster-3 img, .mv-poster-4 img, .mv-poster-5 img, .mv-poster-6 img {
+    height: auto; /* Maintain aspect ratio of images */
+    border-bottom: black 1px solid; /* Add a black border at the bottom of each image */
+    max-width: 274px; /* Set maximum width for the images */
+}
+
+/* Styling for paragraphs inside each movie poster container */
+.mv-poster-1 p, .mv-poster-2 p, .mv-poster-3 p, .mv-poster-4 p, .mv-poster-5 p, .mv-poster-6 p {
+    margin: 16px; /* Add space around the paragraphs */
+    font-family: 'Leto', sans-serif; /* Use 'Leto' font for the text */
+    text-align: justify; /* Justify the text for clean alignment */
+    height: 230px; /* Limit height of paragraphs */
+}
+
+/* Movie button styling inside each movie poster container */
+.mv-poster-1 .movie-button, .mv-poster-2 .movie-button, .mv-poster-3 .movie-button, 
+.mv-poster-4 .movie-button, .mv-poster-5 .movie-button, .mv-poster-6 .movie-button {
+    background-color: #a4a4a4; /* Light gray background for buttons */
+    border: solid 1px black; /* Black border around the buttons */
+    border-radius: 8px; /* Rounded corners for the buttons */
+    font-size: 2em; /* Larger font size for readability */
+    text-align: center; /* Center the text inside the button */
+    padding: 16px 5%; /* Add padding for better spacing */
+    margin: 16px; /* Add margin around the buttons */
+}
+
+/* Correct class name for another movie poster container (second grid) */
+.mv-poster-cont-2 {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create a grid with two columns */
+    gap: 48px; /* Space between grid items */
+    margin: 48px 0; /* Add vertical margin between elements */
+}
+
+/* Positioning each movie poster container relative (for shadow effect) */
+.mv-poster-1, 
+.mv-poster-2, 
+.mv-poster-3, 
+.mv-poster-4, 
+.mv-poster-5, 
+.mv-poster-6 {
+    position: relative; /* Allows for positioning of pseudo-elements */
+}
+
+/* Adding shadow effect to each movie poster container using the ::before pseudo-element */
+.mv-poster-1::before, 
+.mv-poster-2::before, 
+.mv-poster-3::before, 
+.mv-poster-4::before, 
+.mv-poster-5::before, 
+.mv-poster-6::before {
+    content: ''; /* Empty content for the shadow effect */
+    position: absolute; /* Absolutely position the shadow within the container */
+    top: 10px; /* Adjust for the shadow effect */
+    left: 10px; /* Adjust for the shadow effect */
+    right: -10px; /* Match shadow offset on the right */
+    bottom: -10px; /* Match shadow offset on the bottom */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black color for shadow */
+    z-index: -1; /* Ensure the shadow is behind the poster content */
+}
+
+}
+
+@media (min-width: 360px) and (max-width: 720px) { /* ...Mobile... */
+    
+    /* Remove default body margin to ensure content stretches across the full screen */
+body {
+    margin: 0; /* Remove default margin applied by browsers */
+}
+
+/* Header styling */
+header {
+    width: 100%; /* Ensure the header takes up the full width of the screen */
+}
+
+/* Styling for the <h1> element inside the header */
+header h1 {
+    font-size: 3em; /* Set the font size of the header title to 3em */
+}
+
+/* Navigation container styling */
+.nav-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items to opposite ends */
+    align-items: center; /* Vertically align items in the center */
+    margin: 16px; /* Add space around the navigation container */
+}
+
+/* Hide the navigation list on larger screens (could be used for a hamburger menu) */
+.nav-container ul {
+    display: none; /* Hide the <ul> (navigation links) */
+}
+
+/* Styling for the search button */
+.search-button {
+    padding: 5px 15px; /* Add padding inside the button */
+    border: 2px solid #333; /* Add a dark border around the button */
+    border-radius: 8px; /* Round the corners of the button */
+    background-color: #bcbcbc; /* Set a light gray background color */
+}
+
+/* Main content area styling */
+main {
+    flex: 1; /* Allow main to take up remaining space */
+    overflow: scroll; /* Enable scrolling in case of overflow content */
+    background-color: #a4a4a4; /* Set a light gray background color */
+}
+
+/* Styling for each movie poster container (1-6) */
+.mv-poster-1, .mv-poster-2, .mv-poster-3, .mv-poster-4, .mv-poster-5, .mv-poster-6 {
+    background-color: #fff; /* White background for each movie poster */
+    border: 1px solid #000000; /* Black border around each movie poster */
+    margin-top: 16px; /* Add top margin to separate posters */
+}
+
+/* Styling for images inside each movie poster container */
+.mv-poster-1 img, .mv-poster-2 img, .mv-poster-3 img, .mv-poster-4 img, .mv-poster-5 img, .mv-poster-6 img {
+    height: auto; /* Maintain aspect ratio of images */
+    border-bottom: black 1px solid; /* Add a black border at the bottom of each image */
+    width: 100%; /* Ensure the images stretch to fit the container width */
+}
+
+/* Styling for paragraphs inside each movie poster container */
+.mv-poster-1 p, .mv-poster-2 p, .mv-poster-3 p, .mv-poster-4 p, .mv-poster-5 p, .mv-poster-6 p {
+    margin: 16px; /* Add margin around the paragraphs */
+    font-family: 'Leto', sans-serif; /* Use 'Leto' font for the text */
+    text-align: justify; /* Justify the text for a clean alignment */
+    height: 180px; /* Limit height of paragraphs */
+}
+
+/* Styling for the movie button inside each movie poster container */
+.mv-poster-1 .movie-button, .mv-poster-2 .movie-button, .mv-poster-3 .movie-button, 
+.mv-poster-4 .movie-button, .mv-poster-5 .movie-button, .mv-poster-6 .movie-button {
+    background-color: #a4a4a4; /* Light gray background color for buttons */
+    border: solid 1px black; /* Black border around the buttons */
+    border-radius: 8px; /* Rounded corners for the buttons */
+    font-size: 2em; /* Larger font size for readability */
+    text-align: center; /* Center the text inside the button */
+    padding: 16px 5%; /* Add padding inside the button */
+    margin: 16px; /* Add margin around the buttons */
+}
+
+}
